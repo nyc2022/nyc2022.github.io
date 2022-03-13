@@ -9,9 +9,9 @@
     <script>
       function musicPlay() {
         var start_div = document.getElementById('tostart');
-        var description_div = document.getElementById('description');
+        var description_div = document.getElementById('showonclick');
         start_div.style.display = 'none';
-        description_div.style.display = 'block';
+        description_div.style.display = 'inline';
         document.getElementById("toplay").play();
         document.removeEventListener('click', musicPlay);
       }
@@ -29,22 +29,22 @@
         <h1 id = 'fill-name'>Some title</h1>
       </div>
 
-      <div id='tostart'>
+      <div id='tostart' class = 'description'>
         <p>(Click to begin)</p>
       </div>
 
-      <div class = 'description'>
+      <div id = 'showonclick' class = 'description'>
         <p>
-          Hello world!
+          Paragraph 1.
         </p>
         <p>
-          Hello world!
+          Paragraph 1.
         </p>
         <p>
-          Hello world!
+          Paragraph 1.
         </p>
         <p>
-          Hello world!
+          Paragraph 1.
         </p>
 
       </div>
