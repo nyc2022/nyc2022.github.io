@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="pagetheme.css">
 
     <script>
+      // Handle autoplay at start
       function musicPlay() {
         var start_div = document.getElementById('tostart');
         var description_div = document.getElementById('showonclick');
@@ -17,6 +18,10 @@
       }
       document.addEventListener('click', musicPlay);
 
+      // Get URL parameters for title
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      // Parse to guest list
       const guestList = [
         'Leonard','Trent','Isaac','Elisa','Shmabriel','Paul','Deep','Brian','Seth',
         'Cam','Joe'
