@@ -6,15 +6,31 @@
 
     <link rel="stylesheet" type="text/css" href="page_theme.css">
 
+    <script>
+      function musicPlay() {
+        var start_div = document.getElementById('tostart');
+        var description_div = document.getElementById('description');
+        start_div.style.display = 'none';
+        description_div.style.display = 'block';
+        document.getElementById("toplay").play();
+        document.removeEventListener('click', musicPlay);
+      }
+      document.addEventListener('click', musicPlay);
+    </script>
+
   </head>
   <body>
-    <audio autoplay loop>
+    <audio id="toplay" autoplay loop>
       <source src = "assets/dotf_128kbps.mp3">
     </audio>
     <div id='content' class='textbg'>
 
       <div class = 'title-div'>
         <h1 id = 'fill-name'>Some title</h1>
+      </div>
+
+      <div id='tostart'>
+        <p>(Click to begin)</p>
       </div>
 
       <div class = 'description'>
