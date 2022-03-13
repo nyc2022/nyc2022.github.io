@@ -34,7 +34,7 @@ body {
 }
 
 .title-name{
-  font-size: 45px;
+  font-size: 65px;
   font-family: 'Brush Script MT', cursive;
   font-style: oblique;
   margin-top: 0px;
@@ -47,7 +47,7 @@ body {
 
 .centered {
   text-align: center;
-  width: 100%;
+  margin: auto;
 }
 
 .blinktext {
