@@ -17,7 +17,7 @@
         <h1 id='guestname'>Yo,</h1>
       </div>
 
-      <div id='tostart' class='description' style='display:inline'>
+      <div id='tostart' class='description' style='display:inline-block'>
         <p>(Click to begin)</p>
       </div>
 
@@ -45,7 +45,7 @@
         var start_div = document.getElementById('tostart');
         var description_div = document.getElementById('showonclick');
         start_div.style.display = 'none';
-        description_div.style.display = 'inline';
+        description_div.style.display = 'inline-block';
         document.getElementById("toplay").play();
         document.removeEventListener('click', musicPlay);
       }
