@@ -14,7 +14,7 @@
     <div id='content' class='textbg'>
 
       <div class = 'title-div'>
-        <h1 id='guestname'>Dearest friend,</h1>
+        <h1 id='guestname'>Yo,</h1>
       </div>
 
       <div id='tostart' class='description' style='display:inline'>
@@ -63,7 +63,7 @@
         var guestID = urlParams.get("gl");
         if(guestID < guestList.length){
           var guestName = guestList[guestID];
-          document.getElementById('guestname').innerHTML = "Dearest ".concat(guestName,",")
+          document.getElementById('guestname').innerHTML = "Dear ".concat(guestName, ",")
         }
       }
     </script>
