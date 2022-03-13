@@ -26,3 +26,9 @@ p {
         width:100%;
     }
 }
+
+.title-div {
+  width: 600px;
+  height: 365px;
+  background-image: url(assets/stain_cropped.png);
+}
