@@ -6,6 +6,39 @@
 
     <link rel="stylesheet" type="text/css" href="pagetheme.css">
 
+  </head>
+  <body>
+    <audio id="toplay" loop>
+      <source src = "assets/dotf.mp3">
+    </audio>
+    <div id='content' class='textbg'>
+
+      <div class = 'title-div'>
+        <h1 id='guestname'>Dearest friend,</h1>
+      </div>
+
+      <div id='tostart' class='description' style='display:inline'>
+        <p>(Click to begin)</p>
+      </div>
+
+      <div id='showonclick' class='description' style='display:none'>
+        <p>
+          Paragraph 1.
+        </p>
+        <p>
+          Paragraph 2.
+        </p>
+        <p>
+          Paragraph 3.
+        </p>
+        <p>
+          Paragraph 4.
+        </p>
+
+      </div>
+
+    </div>
+
     <script>
       // Handle autoplay at start
       function musicPlay() {
@@ -26,48 +59,14 @@
         'Leonard','Trent','Isaac','Elisa','Shmabriel','Paul','Deep','Brian','Seth',
         'Cam','Joe'
       ];
-      var guestName = "friend";
-      var guestID = -9999;
       if(urlParams.has("gl")){
-        guestID = urlParams.get("gl");
+        var guestID = urlParams.get("gl");
         if(guestID < guestList.length){
-          guestName = guestList[guestID];
+          var guestName = guestList[guestID];
+          document.getElementById('guestname').innerHTML = "Dearest ".concat(guestName,",")
         }
       }
-      document.getElementById('fill-name').innerHTML = "Dearest ".concat(guestName,",")
     </script>
 
-  </head>
-  <body>
-    <audio id="toplay" loop>
-      <source src = "assets/dotf.mp3">
-    </audio>
-    <div id='content' class='textbg'>
-
-      <div class = 'title-div'>
-        <h1 id = 'fill-name'>Some title</h1>
-      </div>
-
-      <div id='tostart' class='description' style='display:inline'>
-        <p>(Click to begin)</p>
-      </div>
-
-      <div id='showonclick' class='description' style='display:none'>
-        <p>
-          Paragraph 1.
-        </p>
-        <p>
-          Paragraph 1.
-        </p>
-        <p>
-          Paragraph 1.
-        </p>
-        <p>
-          Paragraph 1.
-        </p>
-
-      </div>
-
-    </div>
   </body>
 </html>
