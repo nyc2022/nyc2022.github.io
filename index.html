@@ -14,11 +14,11 @@
     <div id='content' class='textbg'>
 
       <div class = 'title-div'>
-        <h1 id='guestname'>Yo,</h1>
+        <h1 id='guestname'>BRIEFING</h1>
       </div>
 
       <div id='tostart' class='description' style='display:inline-block'>
-        <p>(Click to begin)</p>
+        <p>(Click to open)</p>
       </div>
 
       <div id='showonclick' class='description' style='display:none'>
@@ -56,14 +56,14 @@
       const urlParams = new URLSearchParams(queryString);
       // Parse to guest list
       const guestList = [
-        'Leonard','Trent','Isaac','Elisa','Shmabriel','Paul','Deep','Brian','Seth',
-        'Cam','Joe'
+        'LEONARD','TRENT','ISAAC','ELISA','SHMABRIEL','PAUL','DEEP','BRIAN','SETH',
+        'CAM','JOE'
       ];
       if(urlParams.has("gl")){
         var guestID = urlParams.get("gl");
         if(guestID < guestList.length){
           var guestName = guestList[guestID];
-          document.getElementById('guestname').innerHTML = "Dear ".concat(guestName, ",")
+          document.getElementById('guestname').innerHTML = guestname.concat(",")
         }
       }
     </script>
