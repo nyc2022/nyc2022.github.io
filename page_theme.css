@@ -12,14 +12,12 @@ p {
 }
 
 .textbg {
-  margin: auto;
+  margin: 0px auto;
   background: rgba(200,200,200,.35);
 }
 
 #content {
-  width: 80%;
-  max-width: 600px;
-  margin: 0px;
+  width: 600px;
 }
 
 <!-- For mobile display -->
@@ -31,11 +29,13 @@ p {
 }
 
 .title-div {
-  width: 100%;
+  width: 600px;
+  height: 365px;
+  line-height: 365px;
   margin: 0px;
   text-align: center;
   background-image: url(assets/stain_cropped.png);
-  font-size: 28px;
+  font-size: 40px;
   font-family: 'Brush Script MT', cursive;
   font-style: oblique;
 }
