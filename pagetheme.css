@@ -40,6 +40,9 @@ body {
   margin-top: 0px;
 }
 
+.fit-in {
+  object-fit: contain;
+}
 
 .description {
   padding: 20px;
