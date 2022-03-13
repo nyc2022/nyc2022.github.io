@@ -30,10 +30,15 @@ body {
   min-height: 365px;
   margin: 0px;
   background-image: url(assets/stain_cropped.png);
+}
+
+.title-name{
   font-size: 35px;
   font-family: 'Brush Script MT', cursive;
   font-style: oblique;
+  margin-top: 0px;
 }
+
 
 .description {
   margin: 20px;
