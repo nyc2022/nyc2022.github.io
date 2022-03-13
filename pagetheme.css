@@ -43,11 +43,11 @@ body {
 
 .description {
   padding: 20px;
+  width: 100%;
 }
 
 .centered {
   text-align: center;
-  width: 100%;
 }
 
 .blinktext {
