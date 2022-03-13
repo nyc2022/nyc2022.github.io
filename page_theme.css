@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(26,6,0,1), rgba(26,6,0,.95), rgba(26,6,0,.8)), url(https://openclipart.org/image/400px/325903);
+  background-image: linear-gradient(rgba(26,6,0,1), rgba(26,6,0,1), rgba(26,6,0,.95), rgba(26,6,0,.85)), url(https://openclipart.org/image/400px/325903);
   background-size: 100px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -8,4 +8,21 @@ body {
 
 p {
   font-size = 14px;
+}
+
+.textbg {
+  margin: auto;
+  background: rgba(200,200,200,.35);
+}
+
+#content {
+  width: 80%;
+  max-width: 600px;
+}
+
+<!-- For mobile display -->
+@media only screen and (min-device-width : 100px) and (max-device-width : 480px) and (orientation:portrait) {
+    #content {
+        width:100%;
+    }
 }
