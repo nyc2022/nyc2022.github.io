@@ -16,6 +16,20 @@
         document.removeEventListener('click', musicPlay);
       }
       document.addEventListener('click', musicPlay);
+
+      const guestList = [
+        'Leonard','Trent','Isaac','Elisa','Shmabriel','Paul','Deep','Brian','Seth',
+        'Cam','Joe'
+      ];
+      var guestName = "friend";
+      var guestID = -9999;
+      if(urlParams.has("gl")){
+        guestID = urlParams.get("gl");
+        if(guestID < guestList.length){
+          guestName = guestList[guestID];
+        }
+      }
+      document.getElementById('fill-name').innerHTML = "Dearest ".concat(guestName,",")
     </script>
 
   </head>
