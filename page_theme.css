@@ -7,35 +7,40 @@ body {
   padding: 0px;
 }
 
-p {
-  font-size = 14px;
-}
-
 .textbg {
   margin: 0px auto;
-  background: rgba(200,200,200,.35);
+  background: rgba(200,200,200,.2);
 }
 
 #content {
   width: 600px;
+  height: 100%;
 }
 
 <!-- For mobile display -->
 @media only screen and (min-device-width : 100px) and (max-device-width : 480px) and (orientation:portrait) {
   #content {
     width:95%;
-    margin: 0px;
+    margin: auto;
   }
 }
 
 .title-div {
-  width: 600px;
-  height: 365px;
+  min-width: 600px;
+  min-height: 365px;
   line-height: 365px;
   margin: 0px;
   text-align: center;
   background-image: url(assets/stain_cropped.png);
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Brush Script MT', cursive;
   font-style: oblique;
+}
+
+.description {
+  padding: 20px;
+}
+
+.full-width {
+  width: 100%;
 }
