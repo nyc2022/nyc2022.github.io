@@ -29,6 +29,7 @@ body {
   min-width: 600px;
   min-height: 365px;
   margin: 0px;
+  padding-top: 100px;
   background-image: url(assets/stain_cropped.png);
 }
 
