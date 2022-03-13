@@ -1,6 +1,7 @@
 body {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(26,6,0,1), rgba(26,6,0,.95) 50%, rgba(26,6,0,.75)), url(https://openclipart.org/image/400px/325903);
+  background-image: linear-gradient(rgba(26,6,0,1), rgba(26,6,0,.95), rgba(26,6,0,.8)), url(https://openclipart.org/image/400px/325903);
+  background-size: 100px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
