@@ -26,15 +26,15 @@ body {
 }
 
 .title-div {
-  min-width: 600px;
-  min-height: 365px;
+  width: 600px;
+  height: 365px;
   margin: 0px;
-  padding-top: 100px;
+  padding: 100px 0 0;
   background-image: url(assets/stain_cropped.png);
 }
 
 .title-name{
-  font-size: 35px;
+  font-size: 45px;
   font-family: 'Brush Script MT', cursive;
   font-style: oblique;
   margin-top: 0px;
@@ -42,15 +42,11 @@ body {
 
 
 .description {
-  margin: 20px;
+  padding: 20px;
 }
 
 .centered {
   text-align: center;
-  width: 100%;
-}
-
-.full-width {
   width: 100%;
 }
 
